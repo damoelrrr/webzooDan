@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
+import { CommonModule } from '@angular/common'; // <--- ESTA ES LA LÍNEA QUE FALTA
 import { AnimalService } from '../../services/animal-service';
 
 @Component({
   selector: 'app-animal-component',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './animal-component.html',
   styleUrl: './animal-component.css',
 })

@@ -10,13 +10,12 @@
                 </tr>
             </thead>
         <tbody>
-            @for (item of animalList; track item._id){
-            <tr>
+                <tr *ngFor="let item of animalList">
                 <td>{{ item.nombre }}</td>
                 <td>{{ item.edad }}</td>
                 <td>{{ item.tipo }}</td>
                 </tr>
-            }
+            
             </tbody>
         </table>
     </div>
